@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>김민준 ♥ 이서연 결혼합니다</title>
+  <meta name="description" content="2027년 5월 28일(금) 오후 1시, 수성호텔 3층 피오나홀">
+  <meta name="theme-color" content="#FAF6EE">
+
+  <!-- 링크 미리보기(카카오톡 등). 배포 후 아래 content의 image/og.jpg 를 전체 주소로 바꿔야 합니다.
+       예: https://내주소.netlify.app/image/og.jpg  (WORKFLOW.md 6번 배포 단계 참고) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김민준 ♥ 이서연 결혼합니다">
+  <meta property="og:description" content="2027년 5월 28일(금) 오후 1시, 수성호텔 3층 피오나홀">
+  <meta property="og:image" content="image/og.jpg">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 선화 문양 (월계수 가지) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="laurel" viewBox="0 0 160 40">
+        <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+          <path d="M80 28 C 64 28, 40 26, 10 20"/>
+          <path d="M80 28 C 96 28, 120 26, 150 20"/>
+          <path d="M70 27.5 C 66 20, 66 14, 70 9 C 74 14, 74 21, 70 27.5Z"/>
+          <path d="M56 26 C 51 19, 51 13, 55 8 C 59 13, 60 20, 56 26Z"/>
+          <path d="M42 24.5 C 36 18, 36 12, 40 7 C 44 12, 46 19, 42 24.5Z"/>
+          <path d="M28 22.5 C 22 17, 21 11, 25 6 C 29 11, 31 17, 28 22.5Z"/>
+          <path d="M16 21 C 10 16, 8 11, 11 6.5 C 15 10, 18 15, 16 21Z"/>
+          <path d="M90 27.5 C 94 20, 94 14, 90 9 C 86 14, 86 21, 90 27.5Z"/>
+          <path d="M104 26 C 109 19, 109 13, 105 8 C 101 13, 100 20, 104 26Z"/>
+          <path d="M118 24.5 C 124 18, 124 12, 120 7 C 116 12, 114 19, 118 24.5Z"/>
+          <path d="M132 22.5 C 138 17, 139 11, 135 6 C 131 11, 129 17, 132 22.5Z"/>
+          <path d="M144 21 C 150 16, 152 11, 149 6.5 C 145 10, 142 15, 144 21Z"/>
+          <circle cx="80" cy="30" r="1.6"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- 배경음악 버튼 (음원 파일이 있을 때만 표시) -->
+  <button class="music-btn" id="musicBtn" type="button" aria-label="배경음악 재생" aria-pressed="false" hidden>
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18V6l10-2v12"/>
+      <circle cx="6.5" cy="18" r="2.5"/>
+      <circle cx="16.5" cy="16" r="2.5"/>
+    </svg>
+  </button>
+
+  <main class="app">
+
+    <!-- 1. 커버 -->
+    <section class="cover" id="cover">
+      <img class="cover__img" src="image/05.png" alt="신랑 김민준과 신부 이서연">
+      <div class="cover__text">
+        <p class="eyebrow cover__eyebrow">WEDDING INVITATION</p>
+        <h1 class="cover__names">
+          <span>김민준</span>
+          <em>&amp;</em>
+          <span>이서연</span>
+        </h1>
+        <p class="cover__date">2027. 05. 28 FRI PM 1:00</p>
+        <p class="cover__place">수성호텔 3층 피오나홀</p>
+        <svg class="ornament cover__ornament" aria-hidden="true"><use href="#laurel"/></svg>
+      </div>
+    </section>
+
+    <!-- 2. 인사말 -->
+    <section class="section greeting" id="greeting">
+      <div class="reveal">
+        <p class="eyebrow">INVITATION</p>
+        <h2 class="section__title">소중한 분들을 초대합니다</h2>
+        <div class="rule"></div>
+        <figure class="frame-rect">
+          <img src="image/07.png" alt="반지를 낀 두 사람의 손" loading="lazy">
+        </figure>
+        <p class="greeting__text" id="greetingText">서로의 곁에서 가장 나다운 모습이 되어
+이제 함께 걸어가려 합니다.
+
+따뜻한 마음으로 오셔서
+저희의 첫걸음을 축복해 주시면
+더없는 기쁨이겠습니다.</p>
+      </div>
+    </section>
+
+    <!-- 3. 신랑·신부 소개 -->
+    <section class="section couple" id="couple">
+      <div class="reveal">
+        <p class="eyebrow">GROOM &amp; BRIDE</p>
+        <h2 class="section__title">신랑 &amp; 신부</h2>
+        <div class="rule"></div>
+      </div>
+
+      <article class="person reveal">
+        <figure class="arch"><img src="image/01.png" alt="신랑 김민준" loading="lazy"></figure>
+        <p class="person__role">GROOM · 신랑</p>
+        <h3 class="person__name">김민준</h3>
+        <p class="person__intro" id="groomIntro" hidden></p>
+        <a class="btn btn--small" id="groomTel" href="#" hidden>신랑에게 전화</a>
+      </article>
+
+      <article class="person reveal">
+        <figure class="arch"><img src="image/02.png" alt="신부 이서연" loading="lazy"></figure>
+        <p class="person__role">BRIDE · 신부</p>
+        <h3 class="person__name">이서연</h3>
+        <p class="person__intro" id="brideIntro" hidden></p>
+        <a class="btn btn--small" id="brideTel" href="#" hidden>신부에게 전화</a>
+      </article>
+    </section>
+
+    <!-- 4. 예식 안내와 D-day -->
+    <section class="section info" id="info">
+      <div class="reveal">
+        <p class="eyebrow">WEDDING DAY</p>
+        <h2 class="section__title">예식 안내</h2>
+        <div class="rule"></div>
+        <p class="info__date">2027년 5월 28일 금요일 오후 1시</p>
+        <p class="info__place">수성호텔 3층 피오나홀</p>
+
+        <div class="calendar" id="calendar" aria-label="2027년 5월 달력"></div>
+
+        <div class="card dday" aria-live="off">
+          <p class="dday__label">예식까지</p>
+          <p class="dday__count" id="ddayCount">D-</p>
+          <div class="dday__units" id="ddayUnits">
+            <div><b id="dDays">0</b><span>일</span></div>
+            <div><b id="dHours">0</b><span>시간</span></div>
+            <div><b id="dMins">0</b><span>분</span></div>
+            <div><b id="dSecs">0</b><span>초</span></div>
+          </div>
+          <p class="dday__msg" id="ddayMsg"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 갤러리 -->
+    <section class="section gallery" id="gallery">
+      <div class="reveal">
+        <p class="eyebrow">GALLERY</p>
+        <h2 class="section__title">갤러리</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="gallery__grid reveal" id="galleryGrid">
+        <button type="button" class="gallery__item" data-index="0"><img src="image/03.png" alt="손을 잡고 서 있는 두 사람" loading="lazy"></button>
+        <button type="button" class="gallery__item" data-index="1"><img src="image/04.png" alt="서로 기댄 두 사람의 클로즈업" loading="lazy"></button>
+        <button type="button" class="gallery__item" data-index="2"><img src="image/06.png" alt="서로를 바라보며 걷는 두 사람" loading="lazy"></button>
+        <button type="button" class="gallery__item" data-index="3"><img src="image/05.png" alt="베이지 벽 앞에 선 두 사람" loading="lazy"></button>
+        <button type="button" class="gallery__item gallery__item--wide" data-index="4"><img src="image/07.png" alt="반지를 낀 두 사람의 손" loading="lazy"></button>
+        <button type="button" class="gallery__item" data-index="5"><img src="image/01.png" alt="신랑 김민준" loading="lazy"></button>
+        <button type="button" class="gallery__item" data-index="6"><img src="image/02.png" alt="신부 이서연" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- 6. 오시는 길 -->
+    <section class="section location" id="location">
+      <div class="reveal">
+        <p class="eyebrow">LOCATION</p>
+        <h2 class="section__title">오시는 길</h2>
+        <div class="rule"></div>
+        <p class="location__name">수성호텔 3층 피오나홀</p>
+        <p class="location__addr">대구시 수성구 용학로 106-7</p>
+        <div class="btn-row">
+          <a class="btn" href="https://map.naver.com/p/search/수성호텔%20용학로%20106-7" target="_blank" rel="noopener">네이버 지도</a>
+          <a class="btn" href="https://map.kakao.com/?q=수성호텔%20용학로%20106-7" target="_blank" rel="noopener">카카오맵</a>
+        </div>
+        <ul class="transport" id="transport" hidden></ul>
+      </div>
+    </section>
+
+    <!-- 7. 축의금 계좌 (값이 없으면 섹션 전체 숨김) -->
+    <section class="section account" id="account" hidden>
+      <div class="reveal">
+        <p class="eyebrow">GIFT</p>
+        <h2 class="section__title">마음 전하실 곳</h2>
+        <div class="rule"></div>
+        <p class="account__note">참석이 어려우신 분들을 위해<br>계좌번호를 안내드립니다.</p>
+        <div class="account__list" id="accountList"></div>
+      </div>
+    </section>
+
+    <!-- 8. 마무리 -->
+    <section class="section closing" id="closing">
+      <div class="reveal">
+        <figure class="arch"><img src="image/04.png" alt="함께 웃고 있는 두 사람" loading="lazy"></figure>
+        <p class="closing__text">저희의 새로운 시작을<br>함께해 주셔서 감사합니다.</p>
+        <p class="closing__sign">민준 &amp; 서연</p>
+        <div class="btn-row">
+          <button type="button" class="btn" id="copyLinkBtn">링크 복사</button>
+          <button type="button" class="btn" id="kakaoBtn" hidden>카카오톡 공유</button>
+        </div>
+        <svg class="ornament" aria-hidden="true"><use href="#laurel"/></svg>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Kim Minjun &amp; Lee Seoyeon · 2027. 05. 28</p>
+    </footer>
+  </main>
+
+  <!-- 갤러리 확대 보기 -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="사진 확대 보기" hidden>
+    <button type="button" class="lightbox__close" id="lbClose" aria-label="닫기">&times;</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="이전 사진">&lsaquo;</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="">
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="다음 사진">&rsaquo;</button>
+    <p class="lightbox__count" id="lbCount"></p>
+  </div>
+
+  <!-- 복사 완료 알림 -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
